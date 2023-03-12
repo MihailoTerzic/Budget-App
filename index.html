@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+    
+    <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css"
+  rel="stylesheet"
+/>
+<style>
+    input {
+        width: 90%;
+    }
+</style>
+</head>
+<body>
+    <div class="container mt-5">
+
+        <div class="inputdivs d-md-flex justify-content-between ">
+            <div class="inputbudget col-md-5  p-3 shadow-3">
+                <h2 class="text-primary">Budget</h2>
+                <input type="number" name="budget" id="budget" placeholder="Set Total Amount" class="my-3">
+                <button type="submit" class="btn btn-md text-primary" id="budgetbtn">Set Budget</button>
+            </div>
+
+            <div class="expenses col-md-5 shadow-3 p-3" id="expenseinputs">
+                <h2 class="text-primary">Expenses</h2>
+                
+                    <input type="text" placeholder="Enter Title of Product" class="my-1" id="expensename">
+                    <input type="number" name="expenses" id="expense" placeholder="Enter value Of Product" class="my-1">
+                    <button type="submit" class="btn btn-md text-primary mt-3" id="expensesbtn">Check Amount</button>
+            </div>
+        </div>
+
+        <div class="d-md-flex justify-content-around mt-5 bg-primary text-light">
+            <div class="text-center my-3">
+                <h3 class="">Total Budget</h3>
+                <span class="totalbudget">0</span> 
+            </div>
+
+            <div class="text-center my-3">
+                <h3 class="">Expenses</h3>
+                <span class="totalexpenses">0</span> 
+            </div>
+
+            <div class="text-center my-3">
+            <h3 class="">Balance</h3>
+            <span class="totalbalance">0</span>
+            </div>
+        </div>
+
+        <div class="mt-5 shadow-3" >
+            <h2>Expenses List</h2>
+            <div id="list" class="container"></div>
+        </div>
+
+        <script src="script.js"></script>
+</body>
+</html>
